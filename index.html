@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex LaunchX</title>
+    <link rel="stylesheet" href="./estilos.css">   
+</head>
+<body>
+    <section class="s1">
+        <h1>Pokedex</h1>
+        <input type="text" placeholder="Escribe el nombre del Pokemon" id="pokeName" name="pokeName" class="in1">
+        <input onclick="history.go(0)" type="button" value="Reset" class= "butt1" ></input>
+        <div class="talla"><p id="altura"></p> <p id="peso"></p></div>
+        <div class="d1">
+        </div>
+        <div class="d2">
+            <div class="d2-1">
+                <img src="./pokebola.png" alt="Pokemon" id="pokeImg" width="150px">
+                <p>#</p> <p id="pid">0</p><h2 id="nombre">Nombre</h2>
+                <p> -Tipo:</p><p id="tipo">.</p>
+            </div>
+            <section class="abilities">
+                <div class="d2-2">
+                    <p>Healt:</p><p id="stath"></p>
+                    <p>Effort:</p><p id="state"></p>
+                </div>
+                <div class="d2-3">
+                    <p>Attack:</p><p id="stata"></p>
+                    <p>Effort:</p><p id="statae"></p>
+                </div>
+                <div class="d2-4">
+                    <p>Defense:</p><p id="statd"></p>
+                    <p>Effort:</p><p id="statde"></p>
+                </div>
+                <div class="d2-5">
+                    <p>Special Attack:</p><p id="statsa"></p>
+                    <p>Effort:</p><p id="statsae"></p>
+                </div>
+                <div class="d2-6">
+                    <p>Special Defense:</p><p id="statsd"></p>
+                    <p>Effort:</p><p id="statsde"></p>
+                </div>
+                <div class="d2-7">
+                    <p>Speed:</p><p id="statdss"></p>
+                    <p>Effort:</p><p id="statdsse"></p>
+                </div>
+            </section>
+
+
+        </div>
+        <div class="d3">
+
+        </div>
+        <div class="d4">
+            <button class="butt2" onclick="fetchPokemon()">GO!</button>
+        </div>
+        
+    </section>
+</body>
+<footer>
+    <script src="./consulta.js"></script>
+</footer>
+</html>
